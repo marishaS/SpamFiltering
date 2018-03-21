@@ -113,7 +113,6 @@ test_spam_val<- rep("SPAM",length(1:130))
 test_ham_val<- rep("HAM",length(1:348))
 test_labels <-as.factor(c(test_spam_val,test_ham_val))
 
-
 #Implement Naive Bayes classification
 classifier1 <- naiveBayes(train_final, train_labels, laplace = 1)
 test_pred <- predict(classifier1, test_final)
